@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awesome Books-Modular</title>
+    <link rel="stylesheet" href="assets/styles/index.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="menu">
+        <h2>Awesome Books</h2>
+        <ul class="navbar">
+          <li class="nav-link border-right">
+            <a href="#" id="bookslist">List</a>
+          </li>
+          <li class="nav-link border-right">
+            <a href="#" id="addbooks">Add New</a>
+          </li>
+          <li class="nav-link">
+            <a href="#" id="contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="datetime">
+      </div>
+  </header>
+    <main>
+      <section class="booklist">
+        <div class="title">
+          <h1>All awesome books</h1>
+        </div>
+        <div class="container">
+          <ul class="books-list"></ul>
+        </div>
+      </section>
+
+      <section class="addnew">
+        <div class="title">
+          <h2>Add a new book</h2>
+        </div>
+        <div class="container">
+          <div id="form">
+            <input type="text" id="title-input" name="title" placeholder="Title" required />
+            <input type="text" id="author-input" name="author" placeholder="Author" required />
+            <div class="btn">
+              <button type="button" class="AddToShelfBtn">Add</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="title">
+          <h2>Contact Information</h2>
+        </div>
+        <div class="container">
+          <div class="contact-details">
+            <p>Reach me on my Github page</p>
+            <ul class="info">
+             <li>
+              <a href="https://github.com/sireclifford">Clifford Owusu</a>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+  </main>
+     <script type="module" src="assets/scripts/index.js"></script> 
+  </body>
+</html>
