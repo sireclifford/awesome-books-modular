@@ -2,7 +2,7 @@ import BookStore from './BookStore.js';
 
 const store = new BookStore();
 
-export default function removeBook(bookId) {
+const removeBook = (bookId) => {
   const temp = JSON.parse(localStorage.getItem('books')).filter(
     (book) => book.id !== bookId,
   );
@@ -31,7 +31,7 @@ export default function removeBook(bookId) {
       newBook.appendChild(bookInfo);
       bookList.appendChild(newBook);
     });
-  } else {
-    // console.log('No books found');
   }
-}
+};
+
+export default removeBook;

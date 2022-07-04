@@ -120,9 +120,8 @@ header {
   border-radius: 5px;
 }
 
-.booklist,
-.addnew {
-  display: none;
+.booklist {
+  display: block;
 }
 
 .addnew {
@@ -197,4 +196,8 @@ button.removeFromShelfBtn {
 p.book-item__title {
   font-size: 18px;
   font-family: "Circular-Loom", sans-serif;
+}
+
+p#response {
+  text-align: center;
 }

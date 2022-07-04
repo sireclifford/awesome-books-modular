@@ -8,6 +8,14 @@
 - HTML, CSS, JS
 - NodeJs
 
+## Getting Started
+
+> Make sure you have node installed on your local machine.
+
+- Clone the repo.
+- run `npm install` to download the necessary modules.
+- run `npm start` to load the project in your broswer.
+
 
 ## Authors
 

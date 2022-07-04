@@ -3,7 +3,6 @@ import addBook from '../../modules/addBook.js';
 import retreiveBooks from '../../modules/retreiveBooks.js';
 
 window.onload = () => {
-  console.log('hello');
   retreiveBooks();
 };
 
@@ -30,15 +29,6 @@ const addMenuLink = document.querySelector('#addbooks');
 const contactMenuLink = document.querySelector('#contact');
 
 const date = document.querySelector('.datetime');
-// const options = {
-//   year: 'numeric',
-//   month: 'long',
-//   day: 'numeric',
-//   hour: 'numeric',
-//   minute: 'numeric',
-//   second: 'numeric',
-//   hour12: true,
-// };
 
 date.innerHTML = DateTime.local().toFormat("LLLL dd yyyy 'at' hh:mm:ss a");
 

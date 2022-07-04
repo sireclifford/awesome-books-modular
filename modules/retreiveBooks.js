@@ -1,9 +1,11 @@
 import removeBook from './removeBook.js';
 
-export default function retreiveBooks() {
+const retreiveBooks = () => {
+  const responseHTML = document.querySelector('#response');
   const bookList = document.querySelector('.books-list');
   bookList.innerHTML = '';
   if (localStorage.getItem('books')) {
+    responseHTML.innerHTML = '';
     JSON.parse(localStorage.getItem('books')).forEach((element) => {
       const newBook = document.createElement('li');
       newBook.classList.add('book-item');
@@ -25,6 +27,8 @@ export default function retreiveBooks() {
       bookList.appendChild(newBook);
     });
   } else {
-    // console.log('No books found');
+    responseHTML.innerHTML = 'No books in your shelf. Click on Add New Button to add some.';
   }
-}
+};
+
+export default retreiveBooks;
